@@ -1,0 +1,7 @@
+# Jay's Python Challenge
+
+Wherein I attempt the many trials of the [Python Challenge](http://www.pythonchallenge.com).
+
+_This repo contains spoilarz._
+
+
