@@ -6,13 +6,14 @@
 # 
 
 import re
+import string
 
 gunkfile = open('3-gunk.txt', 'r')
 
 gunk = gunkfile.read()
 
-regex = '[a-z]+[A-Z]{3}[a-z]{1}[A-Z]{3}[a-z]+'
+regex = '[a-z]+[A-Z]{3}([a-z]{1})[A-Z]{3}[a-z]+'
 
 match = re.findall(regex, gunk)
 
-print match
+print string.join(match, '')
