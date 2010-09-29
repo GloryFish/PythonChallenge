@@ -4,4 +4,4 @@ Wherein I attempt the many trials of the [Python Challenge](http://www.pythoncha
 
 _This repo contains spoilarz._
 
-
+There is no license for this. That would be silly.
