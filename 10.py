@@ -5,6 +5,9 @@
 #  Created by Jay Roberts on 2010-10-04.
 # 
 
+from itertools import groupby
+import string
+
 # sequence.txt
 # a = [1, 11, 21, 1211, 111221, 
 
@@ -23,15 +26,12 @@ a = [1,
      1311223113112211,
      ]
 
-
-start = 1
-
 # Obviously too long to type by hand, how to generate numbered sequences?
 
 # Can we convert a number to its spoken version:
 
 # This can do it for any sequence of the same number, pretty straightforward
-def lookandsay(start):
+def lookandsay(num):
    return str(len(str(num))) + str(num)[0]
 
 # How to break a list into contiguous groups?
@@ -39,8 +39,18 @@ def lookandsay(start):
 # searchsearchsearch..BINGO
 # http://docs.python.org/library/itertools.html#itertools.groupby
 
+number = '1'
 groups = []
 uniquekeys = []
-for key, group in groupby():
-    groups.append(list(g))      # Store group iterator as a list
-    uniquekeys.append(k)
+
+translated = []
+morrissequence = []
+
+while len(morrissequence) < 31:
+    morrissequence.append(number)
+    for key, group in groupby(number, lambda num: num):
+        translated.append(lookandsay(string.join(group, '')))
+    number = string.join(translated, '')
+    translated = []
+
+print len(morrissequence[30])
