@@ -30,7 +30,7 @@ a = [1,
 
 # Can we convert a number to its spoken version:
 
-# This can do it for any sequence of the same number, pretty straightforward
+# This can do it for any sequence of the smae number, pretty straightforward
 def lookandsay(num):
    return str(len(str(num))) + str(num)[0]
 
