@@ -16,19 +16,17 @@ def copy_color(x, y, i, source, dest):
 minx = 0
 miny = 0
 
-maxx = 99
-maxy = 99
+maxx = 100
+maxy = 100
 
 i = 0
 maxi = 10000
 
-direction = 'right'
-
 source = Image.open('wire.png')
-image = Image.new('RGBA', (maxx + 1, maxy + 1))
+image = Image.new('RGBA', (maxx + 1, maxy + 1), "blue")
 
 
-while i < 9800:
+while i < 9999:
     # Render top row, left to right
     print "TOP"
     for x in range(minx, maxx):
