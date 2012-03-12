@@ -5,6 +5,9 @@
 #  Created by Jay Roberts on 2010-10-04.
 # 
 
+# http://www.pythonchallenge.com/pc/return/bull.html
+# huge:file
+
 from itertools import groupby
 import string
 

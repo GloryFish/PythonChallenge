@@ -5,18 +5,20 @@
 #  Created by Jay Roberts on 2010-10-05.
 # 
 
+# http://www.pythonchallenge.com/pc/return/5808.html
+# huge:file
 
 import urllib
 from PIL import Image
 import string
 
-# webfile = urllib.urlopen('http://www.pythonchallenge.com/pc/return/cave.jpg')
-# 
-# localfile = open('cave.jpg', 'w')
-# localfile.write(webfile.read())
-# 
-# webfile.close()
-# localfile.close()
+webfile = urllib.urlopen('http://www.pythonchallenge.com/pc/return/cave.jpg')
+
+localfile = open('cave.jpg', 'w')
+localfile.write(webfile.read())
+
+webfile.close()
+localfile.close()
 
 img = Image.open('cave.jpg')
 

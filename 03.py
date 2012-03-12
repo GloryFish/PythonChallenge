@@ -5,10 +5,12 @@
 #  Created by Jay Roberts on 2010-09-29.
 # 
 
+# http://www.pythonchallenge.com/pc/def/equality.html
+
 import re
 import string
 
-gunkfile = open('3-gunk.txt', 'r')
+gunkfile = open('03-gunk.txt', 'r')
 
 gunk = gunkfile.read()
 

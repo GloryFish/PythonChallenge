@@ -5,6 +5,9 @@
 #  Created by Jay Roberts on 2010-09-30.
 # 
 
+# http://www.pythonchallenge.com/pc/return/good.html
+# huge:file
+
 import urllib
 from PIL import Image, ImageDraw
 

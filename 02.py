@@ -5,9 +5,11 @@
 #  Created by Jay Roberts on 2010-09-29.
 # 
 
+# http://www.pythonchallenge.com/pc/def/ocr.html
+
 import string
 
-gunkfile = open('2-gunk.txt', 'r')
+gunkfile = open('02-gunk.txt', 'r')
 
 gunk = gunkfile.read()
 

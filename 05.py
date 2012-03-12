@@ -5,6 +5,8 @@
 #  Created by Jay Roberts on 2010-09-30.
 # 
 
+# http://www.pythonchallenge.com/pc/def/peak.html
+
 # Honestly, I have a problem with this challenge. "peak hell" pronounced out loud does NOT sound like
 # "pickle," it sounds like peekle. This made me think of peekl and pecl. I agree with this comment:
 # http://www.pythonchallenge.com/forums/viewtopic.php?p=2265

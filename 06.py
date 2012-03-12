@@ -5,6 +5,8 @@
 #  Created by Jay Roberts on 2010-09-30.
 # 
 
+# http://www.pythonchallenge.com/pc/def/channel.html
+
 #  This one required out of the box thinking. After #5 I was ready for some mean-spirited clues,
 #  but I spent way too much time mangling the source of the html with zip()
  

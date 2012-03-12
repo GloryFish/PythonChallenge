@@ -5,6 +5,8 @@
 #  Created by Jay Roberts on 2010-09-30.
 # 
 
+# http://www.pythonchallenge.com/pc/def/oxygen.html
+
 import urllib
 from PIL import Image
 import string

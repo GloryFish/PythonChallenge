@@ -5,6 +5,8 @@
 #  Created by Jay Roberts on 2010-09-29.
 # 
 
+# http://www.pythonchallenge.com/pc/def/linkedlist.php
+
 import urllib
 import re  # We learn from the previous lesson
 

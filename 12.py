@@ -5,15 +5,18 @@
 #  Created by Jay Roberts on 2010-11-18.
 # 
 
+# http://www.pythonchallenge.com/pc/return/evil.html
+# huge:file
+
 import urllib
 
-# webfile = urllib.urlopen('http://www.pythonchallenge.com/pc/return/evil2.gfx')
-# 
-# localfile = open('evil2.gfx', 'w')
-# localfile.write(webfile.read())
-# 
-# webfile.close()
-# localfile.close()
+webfile = urllib.urlopen('http://www.pythonchallenge.com/pc/return/evil2.gfx')
+
+localfile = open('evil2.gfx', 'w')
+localfile.write(webfile.read())
+
+webfile.close()
+localfile.close()
 
 gfx = open('evil2.gfx', 'r').read()
 

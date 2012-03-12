@@ -5,6 +5,8 @@
 #  Created by Jay Roberts on 2010-11-18.
 # 
 
+# http://www.pythonchallenge.com/pc/return/uzi.html
+# huge:file
 
 import calendar
 

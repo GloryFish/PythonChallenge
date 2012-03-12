@@ -5,8 +5,17 @@
 #  Created by Jay Roberts on 2010-11-18.
 # 
 
+# http://www.pythonchallenge.com/pc/return/italy.html
+
+import urllib
 import PIL
 from PIL import Image
+
+webfile = urllib.urlopen('http://www.pythonchallenge.com/pc/return/wire.png')
+
+localfile = open('wire.png', 'w')
+localfile.write(webfile.read())
+localfile.close()
 
 def copy_color(x, y, i, source, dest):
     print "rendering x: %d y: %d from index: %d" % (x, y, i)
