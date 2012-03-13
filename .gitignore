@@ -1,6 +1,8 @@
+.DS_Store
 *.jpg
 *.txt
 *.png
 *.gfx
 image_*
 *.zip
+*.gif
