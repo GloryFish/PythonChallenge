@@ -15,7 +15,8 @@ import zipfile
 import tempfile
 import re
 import string
-from cookielib import CookieJar
+import cookielib
+import Cookie
 import bz2
 from bz2 import BZ2Decompressor
 
@@ -41,11 +42,11 @@ endpoint = 'http://www.pythonchallenge.com/pc/def/linkedlist.php?busynothing='
 # number = '67111' # This one too
 number = '12345' # This one too...
 
-cj = CookieJar()
+cj = cookielib.CookieJar()
 opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cj))
 
 values = {'username': 'huge', 'password': 'file'}
-data = urllib.urlencode(values)
+auth = urllib.urlencode(values)
 
 cookies = []
 last_count = len(cookies)
@@ -53,7 +54,7 @@ last_count = len(cookies)
 if not os.path.isfile('cookies.txt'):
     
     while True:
-        content = opener.open(endpoint + number, data).read()
+        content = opener.open(endpoint + number, auth).read()
 
         cookie = cj._cookies['.pythonchallenge.com']['/']['info']
         cookies.append(cookie.value)
@@ -89,5 +90,19 @@ import xmlrpclib
 proxy = xmlrpclib.ServerProxy('http://www.pythonchallenge.com/pc/phonebook.php')
 print proxy.phone('Leopold')
 
+# cookie = Cookie.SimpleCookie()
+# cookie.domain = '.pythonchallenge.com'
+# cookie.path = '/'
+# cookie.name = 'info'
+# cookie.value = 'the flowers are on their way'
+# cookie.version = '1'
+# cj.set_cookie(cookie)
+# 
+# content = opener.open('http://www.pythonchallenge.com/pc/stuff/violin.php', auth).read()
+# 
+# print content
+# 
+# print cj._cookies['.pythonchallenge.com']['/']['info']
 
+# Couldn't get python to set a cookie so I used Chrome
 
